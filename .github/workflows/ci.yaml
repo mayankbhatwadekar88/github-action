@@ -79,9 +79,10 @@ jobs:
     
     updatek8s:
         runs-on: ubuntu-latest
-
+        permissionis:
+          contents: write
         needs: docker
-
+        
         steps:
         - name: checkout code
           uses: actions/checkout@v4
